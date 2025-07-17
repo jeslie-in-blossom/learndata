@@ -97,57 +97,57 @@
         <mxCell id="eET4ICUnmijQ7LKeNfcv-37" value="&lt;h3 style=&quot;margin-top: 0px;&quot;&gt;业务逻辑处理&lt;/h3&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;I/O 事件触发&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;ChannelPipeline 中处理器逻辑时，交由该线程池处理&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;。&lt;/span&gt;&lt;font style=&quot;background-color: transparent;&quot;&gt;.&lt;/font&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;labelBorderColor=#D5E8D4;" parent="1" vertex="1">
           <mxGeometry x="1450" y="405" width="290" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="JuXulwrUQDD9TJNH97vn-1" value="&lt;span style=&quot;background-color: transparent;&quot;&gt;创建一系列消息处理器线程池&lt;br&gt;MessageExecutor&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="JuXulwrUQDD9TJNH97vn-1" value="&lt;span style=&quot;background-color: transparent;&quot;&gt;创建一系列消息处理器线程池&lt;br&gt;MessageExecutor&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="200" y="380" width="350" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="JuXulwrUQDD9TJNH97vn-2" value="&lt;span style=&quot;background-color: transparent;&quot;&gt;注册一系列消息处理器&lt;br&gt;&lt;b&gt;this.remotingServer.registerProcessor&lt;/b&gt;&lt;br&gt;(RequestCode, Processor, MessageExecutor);&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="JuXulwrUQDD9TJNH97vn-2" value="&lt;span style=&quot;background-color: transparent;&quot;&gt;注册一系列消息处理器&lt;br&gt;&lt;b&gt;this.remotingServer.registerProcessor&lt;/b&gt;&lt;br&gt;(RequestCode, Processor, MessageExecutor);&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="200" y="440" width="350" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="JuXulwrUQDD9TJNH97vn-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="JuXulwrUQDD9TJNH97vn-9" target="JuXulwrUQDD9TJNH97vn-15">
+        <mxCell id="JuXulwrUQDD9TJNH97vn-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="JuXulwrUQDD9TJNH97vn-9" target="JuXulwrUQDD9TJNH97vn-15" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="JuXulwrUQDD9TJNH97vn-9" value="&lt;br&gt;this.&lt;b&gt;processorTable&lt;/b&gt;.put&lt;br&gt;(requestCode, (processor, executor));" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="JuXulwrUQDD9TJNH97vn-9" value="&lt;br&gt;this.&lt;b&gt;processorTable&lt;/b&gt;.put&lt;br&gt;(requestCode, (processor, executor));" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1100" y="182.5" width="280" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="JuXulwrUQDD9TJNH97vn-10" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;#registerProcessor&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;textShadow=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+        <mxCell id="JuXulwrUQDD9TJNH97vn-10" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;#registerProcessor&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;textShadow=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
           <mxGeometry x="1100" y="182.5" width="280" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="JuXulwrUQDD9TJNH97vn-11" value="创建外部 API 服务：&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;this.brokerOuterAPI.start();&lt;br&gt;this.remotingClient.start();&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="JuXulwrUQDD9TJNH97vn-11" value="创建外部 API 服务：&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;this.brokerOuterAPI.start();&lt;br&gt;this.remotingClient.start();&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="625" y="250" width="350" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="JuXulwrUQDD9TJNH97vn-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="JuXulwrUQDD9TJNH97vn-12" target="JuXulwrUQDD9TJNH97vn-18">
+        <mxCell id="JuXulwrUQDD9TJNH97vn-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="JuXulwrUQDD9TJNH97vn-12" target="JuXulwrUQDD9TJNH97vn-18" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="JuXulwrUQDD9TJNH97vn-12" value="往外部 API 服务注册broker&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;this.registerBrokerAll();&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="JuXulwrUQDD9TJNH97vn-12" value="往外部 API 服务注册broker&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;this.registerBrokerAll();&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="625" y="310" width="350" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="JuXulwrUQDD9TJNH97vn-13" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;// 命令&lt;/div&gt;&lt;div&gt;request = RemotingCommand.createRequestCommand&lt;br&gt;(RequestCode.REGISTER_BROKER, requestHeader);&lt;br&gt;&lt;b&gt;// 调用NameServer：9876&lt;/b&gt;&lt;/div&gt;&lt;div&gt;this.remotingClient.invokeSync(namesrvAddr, request, timeoutMills)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="JuXulwrUQDD9TJNH97vn-13" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;// 命令&lt;/div&gt;&lt;div&gt;request = RemotingCommand.createRequestCommand&lt;br&gt;(RequestCode.REGISTER_BROKER, requestHeader);&lt;br&gt;&lt;b&gt;// 调用NameServer：9876&lt;/b&gt;&lt;/div&gt;&lt;div&gt;this.remotingClient.invokeSync(namesrvAddr, request, timeoutMills)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="605" y="695" width="340" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="JuXulwrUQDD9TJNH97vn-14" value="&lt;span style=&quot;font-size: 13px;&quot;&gt;注册broker#&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;registerBroker&lt;/span&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;()&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;textShadow=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+        <mxCell id="JuXulwrUQDD9TJNH97vn-14" value="&lt;span style=&quot;font-size: 13px;&quot;&gt;注册broker#&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;registerBroker&lt;/span&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;()&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;textShadow=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
           <mxGeometry x="605" y="695" width="340" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="JuXulwrUQDD9TJNH97vn-15" value="&lt;h3 style=&quot;margin-top: 0px;&quot;&gt;processorTable&lt;/h3&gt;&lt;p&gt;记录broker请求的消息处理器&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;labelBorderColor=#D5E8D4;" vertex="1" parent="1">
+        <mxCell id="JuXulwrUQDD9TJNH97vn-15" value="&lt;h3 style=&quot;margin-top: 0px;&quot;&gt;processorTable&lt;/h3&gt;&lt;p&gt;记录broker请求的消息处理器&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;labelBorderColor=#D5E8D4;" parent="1" vertex="1">
           <mxGeometry x="1480" y="92.5" width="190" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="JuXulwrUQDD9TJNH97vn-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="JuXulwrUQDD9TJNH97vn-17" target="JuXulwrUQDD9TJNH97vn-18">
+        <mxCell id="JuXulwrUQDD9TJNH97vn-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="JuXulwrUQDD9TJNH97vn-17" target="JuXulwrUQDD9TJNH97vn-18" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="JuXulwrUQDD9TJNH97vn-30" value="30s" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="JuXulwrUQDD9TJNH97vn-29">
+        <mxCell id="JuXulwrUQDD9TJNH97vn-30" value="30s" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="JuXulwrUQDD9TJNH97vn-29" vertex="1" connectable="0">
           <mxGeometry x="-0.8102" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="JuXulwrUQDD9TJNH97vn-17" value="&lt;span style=&quot;background-color: transparent;&quot;&gt;后台定时任务：30s&lt;br&gt;定期向 Name Server 注册 Broker 信息。&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;text-align: left;&quot;&gt;this.registerBrokerAll();&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="JuXulwrUQDD9TJNH97vn-17" value="&lt;span style=&quot;background-color: transparent;&quot;&gt;后台定时任务：30s&lt;br&gt;定期向 Name Server 注册 Broker 信息。&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;text-align: left;&quot;&gt;this.registerBrokerAll();&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="625" y="370" width="350" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="JuXulwrUQDD9TJNH97vn-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="JuXulwrUQDD9TJNH97vn-18" target="JuXulwrUQDD9TJNH97vn-14">
+        <mxCell id="JuXulwrUQDD9TJNH97vn-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="JuXulwrUQDD9TJNH97vn-18" target="JuXulwrUQDD9TJNH97vn-14" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="JuXulwrUQDD9TJNH97vn-18" value="&lt;span style=&quot;font-size: 13px;&quot;&gt;注册broker#&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;registerBroker&lt;/span&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;()&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;textShadow=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+        <mxCell id="JuXulwrUQDD9TJNH97vn-18" value="&lt;span style=&quot;font-size: 13px;&quot;&gt;注册broker#&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;registerBroker&lt;/span&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;()&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;textShadow=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
           <mxGeometry x="605" y="615" width="340" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="JuXulwrUQDD9TJNH97vn-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.623;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="JuXulwrUQDD9TJNH97vn-2" target="JuXulwrUQDD9TJNH97vn-9">
+        <mxCell id="JuXulwrUQDD9TJNH97vn-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.623;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="JuXulwrUQDD9TJNH97vn-2" target="JuXulwrUQDD9TJNH97vn-9" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="1060" y="470" />
@@ -155,10 +155,51 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="JuXulwrUQDD9TJNH97vn-32" value="提供消息命令对应处理器" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="JuXulwrUQDD9TJNH97vn-31">
+        <mxCell id="JuXulwrUQDD9TJNH97vn-32" value="提供消息命令对应处理器" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="JuXulwrUQDD9TJNH97vn-31" vertex="1" connectable="0">
           <mxGeometry x="-0.2354" y="-2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="ERgifHR-ihallLjUEUwf-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="620" width="800" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="ERgifHR-ihallLjUEUwf-6" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-size: 18px;&quot;&gt;NameServer 服务器&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;textShadow=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="620" width="800" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ERgifHR-ihallLjUEUwf-1" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="665" width="270" height="205" as="geometry" />
+        </mxCell>
+        <mxCell id="ERgifHR-ihallLjUEUwf-2" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;DefaultRequestProcessor&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="675" width="270" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ERgifHR-ihallLjUEUwf-3" value="getRouteInfoManager().registerBroker" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="737.5" width="250" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ERgifHR-ihallLjUEUwf-4" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;#&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;registerBrokerWithFilterServer&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;textShadow=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="737.5" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ERgifHR-ihallLjUEUwf-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="JuXulwrUQDD9TJNH97vn-13" target="ERgifHR-ihallLjUEUwf-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ERgifHR-ihallLjUEUwf-13" value="&lt;span style=&quot;background-color: rgb(213, 232, 212);&quot;&gt;RequestCode.REGISTER_BROKER&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ERgifHR-ihallLjUEUwf-12">
+          <mxGeometry x="0.0175" y="2" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ERgifHR-ihallLjUEUwf-14" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1510" y="670" width="380" height="205" as="geometry" />
+        </mxCell>
+        <mxCell id="ERgifHR-ihallLjUEUwf-15" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;RouteInfoManager&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1510" y="680" width="380" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ERgifHR-ihallLjUEUwf-16" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;注册 Broker 信息&lt;/span&gt;&lt;/div&gt;更新集群地址表、Broker 地址表、主题队列信息&lt;br&gt;同时处理 Master 和 Slave Broker 的不同逻辑" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1520" y="742.5" width="360" height="117.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ERgifHR-ihallLjUEUwf-17" value="&lt;font color=&quot;#000000&quot;&gt;#registerBroker&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;textShadow=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1520" y="742.5" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ERgifHR-ihallLjUEUwf-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ERgifHR-ihallLjUEUwf-4" target="ERgifHR-ihallLjUEUwf-17">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
